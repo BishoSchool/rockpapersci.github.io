@@ -1,39 +1,55 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: lemonchiffon;
+  min-height: 100vh;
 }
 
 .container {
-  text-align: center;
-  margin-top: 20px; /* Added margin for better spacing */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+h1,
+h2 {
+  text-align: center; /* Center align the titles */
+  color: #333;
+  font-size: 2em;
 }
 
 .choices {
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
-  display: flex; /* Changed display to flex */
-  justify-content: center; /* Center align the choices */
 }
 
 .choice,
 .ai-choice {
-  width: 50px;
-  height: 50px;
-  margin: 0 10px;
-}
-
-.choice {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.ai-choice {
-  cursor: not-allowed;
+.choice:hover,
+.ai-choice:hover {
+  transform: scale(1.1);
 }
 
-#result {
-  margin-top: 20px;
+.choice img,
+.ai-choice img {
+  width: 100%;
+  height: 100%;
 }
+
+#score {
+  col
